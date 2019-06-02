@@ -6,8 +6,7 @@ from .models import Greeting
 def index(request):
 
     greeting = Greeting()
-    greeting.save()
 
-    greetings = Greeting.objects.all()
+    greetings = Greeting.datetime1
 
     return render(request, "index.html", {"greetings": greetings})
