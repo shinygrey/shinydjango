@@ -1,5 +1,4 @@
-from django.db import models
+import datetime
 
-class Greeting(models.Model):
-    when = models.DateTimeField("date created", auto_now_add=True)
-	
+class Greeting():
+	datetime1 = datetime.datetime.now()
