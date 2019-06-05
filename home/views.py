@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from .models import Greeting
+from .models import Experiments
 
 def index(request):
 
-    greeting = Greeting()
+    test1 = Experiments()
 
-    greetings = Greeting.datetime1 + " " + responsedata
+    greetings = test1.datetime1 + " " + test1.responsedata
 	
 
     return render(request, "index.html", {"greetings": greetings})

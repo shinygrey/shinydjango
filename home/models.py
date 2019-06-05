@@ -1,8 +1,8 @@
 import datetime
 import requests
 
-class Greeting():
-	def __init__:
+class Experiments():
+	def __init__(self):
 		response = requests.get("https://reqres.in/api/users/2")
 		
 	responsedata = response.json()
