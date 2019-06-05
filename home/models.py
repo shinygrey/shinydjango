@@ -2,9 +2,10 @@ import datetime
 import requests
 
 class Experiments():
-	def __init__(self):
-		self.response = requests.get("https://reqres.in/api/users/2")
+	def __init__(self, userid):
+		self.response = requests.get("https://reqres.in/api/users/" + userid)
 		self.responsedata = self.response.json()
+		self.data = json.loads(self.responsedata)
 		
 	
 	datetime1 = datetime.datetime.now()

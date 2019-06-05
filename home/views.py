@@ -5,9 +5,9 @@ from .models import Experiments
 
 def index(request):
 
-    test1 = Experiments()
-
+    test1 = Experiments("4")
+	firstName = test1["data"]["first_name"]
     currentTime = test1.datetime1
 	
 
-    return render(request, "index.html", {"greetings": currentTime, "restdata": test1.responsedata})
+    return render(request, "index.html", {"greetings": currentTime, "restdata": test1.firstName})
