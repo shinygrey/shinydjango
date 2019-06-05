@@ -7,7 +7,7 @@ def index(request):
 
     test1 = Experiments()
 
-    greetings = test1.datetime1 + " " + test1.responsedata
+    currentTime = test1.datetime1
 	
 
-    return render(request, "index.html", {"greetings": greetings})
+    return render(request, "index.html", {"greetings": currentTime, "restdata": test1.responsedata})
