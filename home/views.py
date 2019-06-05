@@ -7,6 +7,7 @@ def index(request):
 
     greeting = Greeting()
 
-    greetings = Greeting.datetime1
+    greetings = Greeting.datetime1 + " " + responsedata
+	
 
     return render(request, "index.html", {"greetings": greetings})
