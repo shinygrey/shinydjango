@@ -15,4 +15,4 @@ def index(request):
     currentTime = test1.datetime1
 	
 
-    return render(request, "index.html", {"greetings": currentTime, "restdata": firstName}, "test": testName)
+    return render(request, "index.html", {"greetings": currentTime, "restdata": firstName, "test": testName})
