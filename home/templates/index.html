@@ -51,11 +51,13 @@
 <form action="" target="_blank" method="POST">
 {% for category in category_list %}
   <input type="checkbox" id="{{ category.name }}" name="{{ category.name }}">
-  <label for="{{ category.name }}">{{ category.name }}</label>
+  <label for="{{ category.name }}">{{ category.name }} category</label>
 {% endfor %}
   <input type="submit" value="Submit">
 </form>
 
+<input type="checkbox" id="horns" name="horns">
+<label for="horns">Horns</label>
 
         <hr class="featurette-divider"/>
 
