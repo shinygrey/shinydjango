@@ -19,3 +19,15 @@
 </div>
 
 {% endblock %}
+
+
+<form action="" target="_blank" method="POST">
+{% category_list = ["apple","grape","banana"] %}  
+{% for category in category_list %}
+  <input type="checkbox" name="{{ category.name }}">
+  <label for="{{ category.name }}">{{ category.name }}</label>
+{% endfor %}
+  <input type="submit" value="Submit">
+</form>
+
+
