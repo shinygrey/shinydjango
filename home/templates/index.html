@@ -48,10 +48,10 @@
           </div>
         </div>
 	      
-<form action="" target="_blank" method="POST">
+<form action="" target="_blank" method="GET">
 {% for category in category_list %}
-  <input type="checkbox" id="{{ category }}" name="{{ category }}">
-  <label for="{{ category }}">{{ category }} category</label>
+  <input type="checkbox" id="{{ category }}" name="{{ category }}" class="form-check-input">
+  <label for="{{ category }}" class="form-check-label">{{ category }} category</label>
 {% endfor %}
   <input type="submit" value="Submit">
 </form>
