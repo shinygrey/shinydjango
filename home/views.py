@@ -7,7 +7,6 @@ from .models import Xkcd
 def index(request):
 	test1 = Experiments("4")
 	firstName = test1.data["data"]["first_name"]
-	
 	category_list = ["apple","grape","banana"]
 	dictionarytest = {"data": {"first_name": "Helen"}}
 	testName = dictionarytest["data"]["first_name"]
