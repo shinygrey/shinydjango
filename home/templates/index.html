@@ -50,12 +50,13 @@
 	      
 <form action="" target="_blank" method="GET">
 {% for category in category_list %}
-  <input type="checkbox" id="{{ category }}" name="{{ category }}" class="form-check-input">
-  <label for="{{ category }}" class="form-check-label">{{ category }} category</label>
+	<div class="custom-control custom-checkbox mb-3">
+		<input type="checkbox" class="custom-control-input" id="{{ category }}" name="{{ category }}">
+		<label for="{{ category }}" class="custom-control-label">{{ category }}</label>
+	</div>
 {% endfor %}
   <input type="submit" value="Submit">
-</form>
-
+</form>	      
         <hr class="featurette-divider"/>
 
       </div>
